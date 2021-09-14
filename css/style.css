@@ -1,0 +1,304 @@
+/* css base */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* cabeçalho */
+
+.logo {
+    margin-bottom: 1rem;
+    width: 12%;
+    float: left;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 0 100px;
+}
+
+nav {    
+    text-align: center;
+    vertical-align: bottom;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #504a4c;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 1.25rem;
+    text-decoration: none;    
+    text-transform: lowercase;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/*banner*/
+
+.banner {
+    position: relative;
+}
+
+.banner__img {
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    height: calc(40vh - 50px);
+    width: 100%;
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    position: absolute;
+    
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.815);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+    width: 100%;
+    left: 50%;
+    top: 50%;
+}
+
+/* rodapé */
+
+footer {
+    background: #CCCCCC;
+    color: #504a4c;
+    text-align: center;
+    padding: 1.5625rem;
+    text-transform: lowercase;
+}
+
+/* corpo home */
+
+.principal__titulo {
+    color: #504a4c;
+    text-align: center;    
+    /* text-transform: lowercase; */
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FFFFFF;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.img__deb {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px;
+}
+.sobre {
+    background-image: linear-gradient(#ffffff, #CCCCCC);
+    margin: 0 auto; 
+}
+
+.sobre p {
+    margin: 0 0 1em;
+}
+.sobre__conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.sobre__lista {
+    width: 40%;
+    display: inline-block;
+    justify-content: space-around;
+    vertical-align: top;
+    margin-left: 100px;
+}
+
+.itens {
+    line-height: 1.5em;    
+    margin: 0 0 1em;
+}
+
+.itens:before {
+    content:url('../img/favicon.png');
+    max-inline-size: 10%;
+}
+
+
+.sobre__img {
+    width: 40%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #00000062;
+}
+
+.sobre__img:hover {
+    opacity: 0.3;
+}
+
+/*css produtos*/
+
+.produtos {
+    background-image: linear-gradient(#ffffff, #CCCCCC);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}
+
+.produto {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(30% - 2.5rem);
+}
+
+.produto__imagem {
+    height: 300px; 
+}
+
+.produto__conteudo {
+    padding: 1rem;
+}
+
+.produto__titulo {    
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;   
+}
+
+.produto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.produto__botao {
+    background: #666565;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    margin: 10px 0;
+    padding: 1rem;
+    transition: all, 1s ease-in-out;
+}
+
+.produto__botao:hover{
+    background-color: #504a4c;
+    cursor: pointer;
+}
+/*css contato*/
+
+form {
+    padding: 3em 0;
+    margin: 40px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.form {
+    background:  linear-gradient(#ffffff, #CCCCCC);
+    
+}
+
+form label, form legend {
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;  
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px;
+    background: #504a4c;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #CCCCCC;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*css da página inicial*/
+
+
+
+@media screen and (max-width:480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width:auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imgben {
+        width: 100%;
+    }
+}
